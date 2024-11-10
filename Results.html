@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Results</title>
+</head>
+<body>
+    <h1>Search Results</h1>
+    <ul>
+        {% for entity, info in results.items() %}
+            <li>{{ entity }}: {{ info }}</li>
+        {% endfor %}
+    </ul>
+    <a href="/download_csv">Download CSV</a>
+</body>
+</html>
