@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Select Column</title>
+</head>
+<body>
+    <h1>Select the Column for Queries</h1>
+    <form action="/define_query" method="post">
+        <label for="query">Define your query:</label>
+        <input type="text" id="query" name="query" placeholder="Get me the email address of {company}">
+        <label for="search_column">Column for Search Queries:</label>
+        <select id="search_column" name="search_column">
+            {% for column in columns %}
+                <option value="{{ column }}">{{ column }}</option>
+            {% endfor %}
+        </select>
+        <button type="submit">Submit</button>
+    </form>
+    <h2>Data Preview</h2>
+    {{ data_preview|safe }}
+</body>
+</html>
