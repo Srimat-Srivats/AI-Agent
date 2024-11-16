@@ -22,3 +22,9 @@ Usage: We used SerpAPI for gathering web search results based on user queries.
 OpenAI GPT API:
 Purpose: To parse web search results and extract specific information.
 Usage: We used OpenAI's GPT-3 to interpret and extract the requested information from web search results.
+
+
+https://github.com/user-attachments/assets/e50d3608-0a5f-44f4-9a8a-89315b2b9915
+
+
+
